@@ -31,9 +31,9 @@ int main()
 
     /* OPERATORS */
 
-    // 1) Arithemetic Operators //
+    // 1) Arithmetic Operators //
 
-    // I)Uniary => +,-,*,/,%
+    // I) Unary => +,-,*,/,%
     // Example-1)
     a = 10, b = 20;
     cout << "Addition = " << a + b << endl;
@@ -207,9 +207,9 @@ int main()
     cout << "Value of z = " << z << endl;
     cout << "Values of x and y = " << x << " " << y << endl; // 10 20
 
-    // Pratice Question //
+    // Practice Question //
 
-    /* 1) Figure out how to fing if a number
+    /* 1) Figure out how to find if a number
     is power of 2 without any loop. */
     // Ans)
     int n;
@@ -224,4 +224,4 @@ int main()
         cout << "It is not a power of 2" << endl;
 
     return 0;
-} 
+}

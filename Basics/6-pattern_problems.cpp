@@ -420,7 +420,7 @@ int main()
     // Ans)
     int n14;
     cout << "\nPYRAMID PATTERN-1\n"
-    << endl;
+         << endl;
     // input
     cout << "Enter a number = ";
     cin >> n14;
@@ -429,14 +429,14 @@ int main()
     for (int i = 0; i < n14; i++)
     {
         for (int space = 0; space < n14 - i - 1; space++)
-        cout << "  ";
+            cout << "  ";
         // nums-1
         for (int j = 1; j <= i + 1; j++)
-        cout << j << " ";
+            cout << j << " ";
         // nums-2
         for (int j = i; j > 0; j--)
-        // (or) for(int j = 1; j <= i; j++)
-        cout << j << " ";
+            // (or) for(int j = 1; j <= i; j++)
+            cout << j << " ";
         cout << endl;
     }
 
@@ -448,16 +448,17 @@ int main()
     // Ans)
     int N1;
     cout << "\nPYRAMID PATTERN-2\n"
-    << endl;
+         << endl;
     // input
     cout << "Enter a number = ";
     cin >> N1;
     // output
     cout << "\nDISPLAYING THE PATTERN : " << endl;
-    for(int i = 0; i < N1;i++) {
-        for(int space = 0;space < N1-i-1;space++)
+    for (int i = 0; i < N1; i++)
+    {
+        for (int space = 0; space < N1 - i - 1; space++)
             cout << " ";
-        for(int j = 0;j < 2*i+1;j++)
+        for (int j = 0; j < 2 * i + 1; j++)
             cout << "*";
         cout << endl;
     }
@@ -580,7 +581,7 @@ int main()
 
         // spaces in middle
         for (int space = 0; space < 2 * (n16 - i - 1); space++)
-        // (or) for (int j = 1; j <= 2 * (n16 - i); j++)
+            // (or) for (int j = 1; j <= 2 * (n16 - i); j++)
             cout << " ";
 
         // right wing
@@ -591,14 +592,14 @@ int main()
     }
 
     // Bottom half
-    for (int i = n16-1; i >= 0; i--)
+    for (int i = n16 - 1; i >= 0; i--)
     {
         // left wing
         for (int j = 0; j <= i; j++)
             cout << "*";
 
         // spaces in middle
-        for (int j = 0; j < 2 * (n16 - i-1); j++)
+        for (int j = 0; j < 2 * (n16 - i - 1); j++)
             cout << " ";
 
         // right wing

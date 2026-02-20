@@ -160,7 +160,7 @@ int main()
     // Ex-2)
     int x = 5, y = 10;
     // implicit type-casting
-    // This is a example for call by value
+    // This is an example of call by value
     cout << "\nSum of x and y = " << sum(x, y) << endl;
     // x,y => arguments
     // arguments (or) actual parameters
@@ -267,7 +267,7 @@ int main()
     cout << "Enter the binary code : ";
     cin >> n6;
     if (!isBinary(n6))
-        cout << "Enter a valid input like 0's and 1's" << endl;
+        cout << "Enter a valid input containing only 0s and 1s" << endl;
     else
         binaryToDec(n6);
 
@@ -296,9 +296,9 @@ void primeNum(int n)
         }
     }
     if (isPrime)
-        cout << n << " is a Prime number\n";
+        cout << n << " is a prime number\n";
     else
-        cout << n << " is a not a Prime number\n";
+        cout << n << " is not a prime number\n";
 }
 
 void primeN(int n)

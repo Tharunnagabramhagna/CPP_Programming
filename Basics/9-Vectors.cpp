@@ -190,9 +190,9 @@ int main()
     // // 2) WAF to reverse an vector?
     // // Ans)
     // int n2;
-    // cout << "\nREVERSING AN VECTOR\n"
+    // cout << "\nREVERSING A VECTOR\n"
     //      << endl;
-    // cout << "Enter the number of elemnets needed = ";
+    // cout << "Enter the number of elements needed = ";
     // cin >> n2;
     // vector<int> originalVec(n2);
     // // input

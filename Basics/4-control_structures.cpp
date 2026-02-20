@@ -15,11 +15,11 @@ int main()
     cout << "Let's go home" << endl;
     // Example-2)
     std::string isRainy;
-    cout << "Is weather is rainy(y/n) : ";
+    cout << "Is the weather rainy (y/n) : ";
     cin >> isRainy;
     if (isRainy == "y" || isRainy == "yes" || isRainy == "Y" || isRainy == "YES")
-        cout << "Weather is Rainy today" << endl;
-    cout << "Weather is not Sunny today" << endl;
+        cout << "The weather is rainy today" << endl;
+    cout << "The weather is not sunny today" << endl;
 
     // if-else statement //
     int age;
@@ -218,7 +218,7 @@ int main()
     cout << "Enter the character = ";
     cin >> userText;
     if (userText >= 'A' && userText <= 'Z')
-        cout << userText << " is a uppercase letter." << endl;
+        cout << userText << " is an uppercase letter." << endl;
     else if (userText >= 'a' && userText <= 'z')
         cout << userText << " is a lowercase letter." << endl;
     else

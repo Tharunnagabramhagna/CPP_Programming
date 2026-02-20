@@ -258,7 +258,7 @@ int main()
     }
     cout << "Enter the required number = ";
     cin >> target;
-    cout << "It's returns -1 if that element doesn't exist." << endl;
+    cout << "It returns -1 if that element doesn't exist." << endl;
     cout << "Index of target = " << linearSearch(linearArr, N, target) << endl;
 
     // Reverse an Array //
@@ -339,7 +339,7 @@ int main()
     cout << "Largest element of nums : " << largest << endl;
     cout << "Smallest element of nums : " << smallest << endl;
     // (or)
-    // // max,min varaibales
+    // // max, min variables
     // int max = nums[0];
     // int min = nums[0];
     // // min and max condition
@@ -496,7 +496,7 @@ int main()
 
     /* 2D Arrays */
 
-    // Intializing 2d array
+    // Initializing 2D array
     int rows = 3, columns = 4;
     int matrix[3][4] = {{1, 2, 3, 4}, {5, 6, 7, 8}, {1, 3, 5, 7}};
 

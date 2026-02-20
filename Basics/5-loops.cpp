@@ -27,7 +27,7 @@ int main()
 
     // Break Statement (keyword) //
     int breakNum;
-    cout << "Enter the breaking number = ";
+    cout << "Enter the number to break at = ";
     cin >> breakNum;
     for (int i = 1; i <= 10; i++)
     {
@@ -56,7 +56,7 @@ int main()
 
     // Continue Statement (keyword)
     int continueNum;
-    cout << "Enter the leaving number = ";
+    cout << "Enter the number to skip = ";
     cin >> continueNum;
     for (int i = 1; i <= 10; i++)
     {
@@ -159,8 +159,9 @@ int main()
     int sum3Num = 0;
     cout << "\nEnter your number = ";
     cin >> n;
-    for(int i = 1;i <= n;i++) {
-        if(i%3 == 0)
+    for (int i = 1; i <= n; i++)
+    {
+        if (i % 3 == 0)
             sum3Num += i;
     }
     cout << "Sum = " << sum3Num << endl;
@@ -170,7 +171,7 @@ int main()
     long double N; // upto 31 is limit
     cout << "Enter the number : ";
     cin >> N;
-    for(int i = 1;i <= N;i++)
+    for (int i = 1; i <= N; i++)
         fact *= i;
     cout << "Factorial of " << N << " is : " << fact << endl;
 
@@ -181,17 +182,18 @@ int main()
     cout << "Enter a number = \n";
     cin >> N1;
     int temp = N1;
-    while (temp%2 == 0)
+    while (temp % 2 == 0)
         temp /= 2;
-    if(temp == 1)
-        cout << N1 << " is power of 2." << endl;
+    if (temp == 1)
+        cout << N1 << " is a power of 2." << endl;
     else
-        cout << N1 <<" is not power of 2." << endl;
+        cout << N1 << " is not a power of 2." << endl;
 
     // 7) Write a Program to print reverse of a number n.
     // Ans)
     int num1;
-    cout << "\nREVERSING A DIGIT..\n" << endl;
+    cout << "\nREVERSING A DIGIT..\n"
+         << endl;
     cout << "Enter a number: ";
     cin >> num1;
 

@@ -1,7 +1,7 @@
 #include <iostream>
 #include <string>
-#include <iomanip> // used to know limit of any-datatype
-#include <limits> // same as iomanip directive
+#include <iomanip> // used for formatting output
+#include <limits>  // header for numeric limits
 #include <limits.h>
 using std::cin;
 using std::cout;
@@ -19,7 +19,7 @@ int main()
     int var = 23;
     var = 0x15; // hexadecimal value is 21
     cout << var << endl;
-    // From cicrles of short int
+    // From ranges of short int
     unsigned short int val1 = 65536;
     signed short int val2 = -32769;
     cout << "value of val1 : " << val1 << endl;
@@ -72,14 +72,14 @@ int main()
     // character datatype
     char ch1 = 128;
     char ch2 = 'a';
-    cout << int(ch1) << endl; // type-casting
-    cout << int(ch2) << endl; // from char circle
+    cout << int(ch1) << endl;                            // type-casting
+    cout << int(ch2) << endl;                            // from char circle
     cout << "Max range of char : " << SCHAR_MAX << endl; // limits.h file
 
     // Type Casting
     float x = 18.24f;
-    int y = 24.12f; // automatically typecasted to int => implicit type-casting
-    std::cout << "Sum = " << x+float(y) << std::endl; // explicit type-casting
+    int y = 24.12f;                                     // automatically typecasted to int => implicit type-casting
+    std::cout << "Sum = " << x + float(y) << std::endl; // explicit type-casting
 
     // wchar_t datatype
     cout << "Max range of wchar_t : " << std::numeric_limits<wchar_t>::max() << endl;
@@ -89,10 +89,10 @@ int main()
 
     // Bool datatype
     int z = 10 + 90 + true - false;
-    cout << "Z value = " << z << endl; // 101
-    bool roll = 7; // 7 => 1 (implicit type-casting)
-    cout << roll << endl; // displays 1
-    cout << "Size of bool = " << sizeof(bool) << " byte" << endl; // 1
+    cout << "Z value = " << z << endl;                                          // 101
+    bool roll = 7;                                                              // 7 => 1 (implicit type-casting)
+    cout << roll << endl;                                                       // displays 1
+    cout << "Size of bool = " << sizeof(bool) << " byte" << endl;               // 1
     cout << "Max range of bool : " << std::numeric_limits<bool>::max() << endl; // 1
     cout << "Min range of bool : " << std::numeric_limits<bool>::min() << endl; // 0
 
@@ -102,10 +102,10 @@ int main()
     void *ptr; // can be type-casted to any datatype
     int age = 10;
     ptr = &age;
-    cout << "Value of ptr = " << *(int*)ptr << endl; // explicit
+    cout << "Value of ptr = " << *(int *)ptr << endl; // explicit
 
     /* Due to this "using namespace std"
-    has became a bad practice */
+    has become a bad practice */
     int cout = 13;
     std::cout << "cout value = " << cout;
 

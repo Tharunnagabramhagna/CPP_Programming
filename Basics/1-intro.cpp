@@ -9,7 +9,7 @@ int main()
               << std::endl;
     // Printing a sentence
     std::cout << "My father is my hero\n";
-    // Used C libary function
+    // Used C library function
     printf("Hello World");
 
     return 0;
