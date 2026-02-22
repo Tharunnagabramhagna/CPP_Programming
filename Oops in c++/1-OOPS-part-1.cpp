@@ -5,7 +5,7 @@ using namespace std;
 // 4 Pillars of OOPS => Encapsulation, Abstraction, Inheritance, Polymorphism
 
 // Objects are entities in the real world (e.g. students)
-// Class is the blueprint for these entities (e.g. classroom)
+// A class is the blueprint for these entities (e.g. classroom)
 // Encapsulation => Teacher is an example (hides sensitive info)
 
 class Teacher
@@ -29,6 +29,7 @@ public:
         salary = s;
     }
     string name;
+
     string dept;
     string subject;
     void changeDept(string newDept)
@@ -159,7 +160,7 @@ public:
 int main()
 {
     // Ex-1)
-    Student s1; // Constructive call (done by c++)
+    Student s1; // Constructor call (done by C++)
     s1.name = "Arjun";
     s1.rollNo = 699;
     s1.age = 19;
@@ -178,9 +179,10 @@ int main()
     cout << "Cgpa of the student = " << s2.cgpa << endl;
 
     // Ex-2)
-    Teacher T1; // Constructive call (done by user)
+    Teacher T1; // Constructor call (done by user)
     T1.name = "John";
     T1.subject = "DSA";
+    T1.changeDept("ECE");
     T1.setSalary(25000);
     cout << "Details of the Teacher-1 :\n";
     cout << "Name of the teacher = " << T1.name << endl;
@@ -200,6 +202,7 @@ int main()
     // copy constructor
     Employee e2(e1);
     e2.getInfo();
+    cout << endl;
 
     // Ex-4) (The drawback of shallow copy => DUE TO DMA)
     student s11("Yash", 8.8);
@@ -207,17 +210,17 @@ int main()
     s11.getInfo();
     *(s22.cgpaPtr) = 9.2;
     s11.getInfo();
-    // Here i changed in s22 but the changes reflected in s11 too. //
+    // Here I changed s22, but the changes were reflected in s11 too. //
 
     // Ex-5) (The solution => deep copy + destructor)
-    STUDENT S1("Yash", 8.8);
+    STUDENT S1("Arun", 8.8);
     STUDENT S2(S1);
     cout << "\nDetails of STUDENT-1(before change) : \n";
     S1.getInfo();
     *(S2.cgpaPtr) = 9.2;
-    cout << "\nDetails of STUDENT-1(After change) : \n";
+    cout << "\nDetails of STUDENT-1 (After change) : \n";
     S1.getInfo();
-    S2.name = "Garuda";
+    S2.name = "Raghu";
     cout << "\nDetails of STUDENT-2 : \n";
     S2.getInfo();
     // As there are 2 objects so destructor is called twice.
