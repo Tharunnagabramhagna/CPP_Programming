@@ -47,30 +47,30 @@ vector<string> invalidMsgs = {
     "That input doesn't look right. Please enter a valid number.",
     "Hmm... I was expecting a number. Try again.",
     "Invalid choice detected. Please follow the menu options.",
-    "Oops! That doesn’t match the available options.",
+    "Oops! That doesn't match the available options.",
     "Please enter a valid numeric choice from the menu."};
 
 // ----------- CONTINUE / EXIT RESPONSES -----------
 vector<string> continueMsgs = {
-    "Nice—let’s keep improving step by step 💪",
-    "Great mindset. Let’s analyze further 🔍",
-    "You're building consistency—continue 🚀",
-    "Progress is happening. Let’s go again ⚡",
-    "Let’s refine your approach even more 📈"};
+    "Nice—let's keep improving step by step",
+    "Great mindset. Let's analyze further",
+    "You're building consistency—continue",
+    "Progress is happening. Let's go again",
+    "Let's refine your approach even more"};
 
 vector<string> goodbyeMsgs = {
-    "Goodbye! Stay consistent and keep growing 🌱",
-    "Take care—come back stronger next time 💡",
-    "Keep learning and improving daily 🚀",
-    "See you again—progress never stops 🔄",
-    "Stay focused and keep moving forward 🔥"};
+    "Goodbye! Stay consistent and keep growing",
+    "Take care—come back stronger next time",
+    "Keep learning and improving daily",
+    "See you again—progress never stops",
+    "Stay focused and keep moving forward"};
 
 // ----------- TITLE -----------
 void showTitle()
 {
     slowPrint("\n===========================================\n");
     slowPrint("        STUDENT MIND ANALYZER SYSTEM\n");
-    slowPrint("     Understand • Improve • Grow 🚀\n");
+    slowPrint("     Understand | Improve | Grow\n");
     slowPrint("===========================================\n\n");
 }
 
@@ -99,13 +99,13 @@ void randomMotivation()
         "Discipline will take you far.",
         "You are closer than you think.",
         "Every expert was once a beginner."};
-    slowPrint("\n💡 " + getRandomResponse(msgs) + "\n");
+    slowPrint("\n " + getRandomResponse(msgs) + "\n");
 }
 
 // ----------- WEBSITE SUGGESTION -----------
 void suggestWebsites(int mchoice)
 {
-    slowPrint("\n🌐 Recommended Study Resources:\n");
+    slowPrint("\nRecommended Study Resources:\n");
 
     switch (mchoice)
     {
@@ -263,7 +263,7 @@ public:
             "Start small—momentum will follow.",
             "Action creates motivation.",
             "Even 5 minutes of effort matters.",
-            "Don’t wait—just begin.",
+            "Don't wait—just begin.",
             "Small steps lead to big change."};
         slowPrint(getRandomResponse(res) + "\n");
         m->mindset();
@@ -407,7 +407,7 @@ int main()
         Sleep(500);
         slowPrint("Generating insights and recommendations...\n", 25);
         Sleep(400);
-        slowPrint("✔ Analysis complete\n\n", 20);
+        slowPrint("Analysis complete\n\n", 20);
 
         switch (choice)
         {
